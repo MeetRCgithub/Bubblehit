@@ -97,6 +97,11 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.777);
 }
+.bubbles:hover{
+
+    color:rgba(255, 255, 255, 0.777);
+    background-color:  rgba(12, 31, 205, 0.818);
+}
 
 /* .this{
     display: flex;
