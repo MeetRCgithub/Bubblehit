@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    margin-top: 25px;
+    color:rgb(204, 236, 28);
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.container{
+    /* margin-top:5vh; */
+    height:100%;
+    width:100%;
+    /* border-radius: 20px; */
+    /* opacity: 0.5; */
+    /* box-shadow: 10px 5px 20px 5px; */
+    background-color: rgb(59, 52, 152);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body::-webkit-scrollbar{
+    width:0px;
+}
+.data{
+    margin: 2.5%;
+    padding: 2.5%;
+    height:90%;
+    width:90%;
+    border:2px solid springgreen;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.top{
+    border-radius: 20px;
+    height:90px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(240, 248, 255, 0.7);
+}
+.g-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.txt{
+    margin:5px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+.val{
+    margin:5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width:50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: blue;
+}
+.bottom{
+    padding: 20px 0px;
+    height:calc( 100vh - 90px );
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bubbles{
+    height:40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    color:rgba(12, 31, 205, 0.818);
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.777);
+}
+
+/* .this{
+    display: flex;
+    color:green;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+} */
+/* #btnsub:hover{
+    background-color: green;
+    color:black;
+} */
