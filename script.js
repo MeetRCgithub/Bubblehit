@@ -8,38 +8,30 @@ function scoreinc(){
     document.querySelector("#scval").textContent = score;
 }
 
-var clknum;
+var rn;
 function codehit(){
-    var rn = Math.floor(Math.random()*15);
+     rn = Math.floor(Math.random()*15);
     document.querySelector("#hitval").textContent = rn;
     
-    btm.addEventListener('click',(det)=>{
-      clknum = Number(det.target.textContent);
-      if(clknum === rn){
-        scoreinc();
-        codehit();
-        makebubble();
-        // timer();
-      }
-      else{
-        gameover();
-        stoptime();
-      }
-    })
 }
 codehit();
 
+
 var time;
 function stoptime(){
-    time = 0;
+     time = 0;
+    document.querySelector("#timeval").textContent = time;
+    // clearInterval(timeint);
+    // makebubble();
+    // codehit();
 }
-
+var timeint;
 function timer(){
-    time = 15;
-    var timeint = setInterval(() => {
-        if (time>=0) {
-            document.querySelector("#timeval").textContent = time;
+     time = 15;
+    timeint = setInterval(() => {
+        if (time>0) {
             time--;
+            document.querySelector("#timeval").textContent = time;
         }
         else{
             clearInterval(timeint);
@@ -64,6 +56,7 @@ makebubble();
 
 
 function gameover() {
+    
     btm.innerHTML = `<h1> Game is over </h1> <br>   <p>Your score is:<H2>${score}</h2></p> <button onclick="window.location.reload();" id="btnsub" >Start</button>`
         btm.style.flexDirection = "column";
         btm.style.fontSize = "30px";
@@ -78,6 +71,22 @@ function gameover() {
         btns.style.color = "green";
         btns.style.margin = "20px";
         btm.style.fontWeight = 600 ;
-
+       
     }
+
+var clknum;
+    btm.addEventListener('click',function(det){
+        clknum = Number(det.target.textContent);
+        console.log(clknum);
+        if(clknum === rn){
+          scoreinc();
+          codehit();
+          makebubble();
+          // timer();
+        }
+        else{ 
+          gameover();
+          stoptime();
+        }
+      });
     
